@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Disposal Swap-Out — Book</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#9A3412}a:hover{color:#7C2D12}
+input,textarea{font:inherit}
+input:focus,textarea:focus,button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #2563EB;outline-offset:2px}
+summary{cursor:pointer}
+</style>
+</helmet>
+<div style="background: #FFFFFF; color: #141414; font-family: Inter, system-ui, sans-serif; font-size: 17px; line-height: 1.5">
+
+<header style="border-bottom: 1px solid #D6D6D2">
+<div style="max-width: 1040px; margin: 0 auto; padding: 14px 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column">
+<span style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 20px; letter-spacing: -0.01em">Just the Disposal Guy</span>
+<span style="font-size: 13px; color: #4A4A4A">Licensed contractor · ROC #[ROC LICENSE #]</span>
+</div>
+<a href="#book" style="background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 700; padding: 12px 20px; border-radius: 8px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book now</a>
+</div>
+</header>
+
+<section style="background: #141414; color: #FFFFFF">
+<div style="max-width: 1040px; margin: 0 auto; padding: 56px 20px 64px; display: flex; flex-direction: column; gap: 20px">
+<h1 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 900; font-size: clamp(2.4rem, 7vw, 4.5rem); line-height: 1.02; letter-spacing: -0.02em; max-width: 16ch">Dead garbage disposal? New one installed. <span style="color: #FB923C">$589 flat.</span></h1>
+<p style="margin: 0; font-size: 19px; color: #E5E5E5; max-width: 40ch">Phoenix metro's disposal-only service. Two models, one price each, in and out in about an hour. We haul away the old unit, the box, everything.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px">
+<a href="#menu" style="background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 18px; padding: 14px 26px; border-radius: 8px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center">Pick your model</a>
+</div>
+</div>
+</section>
+
+<section id="menu" style="max-width: 1040px; margin: 0 auto; padding: 56px 20px 24px; display: flex; flex-direction: column; gap: 24px">
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px">Pick one</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+
+<div style="{{opt1Style}}">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4A4A">Option 1</span>
+<h3 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 24px">Waste King L-3200</h3>
+</div>
+<span style="background: #FFEDD5; color: #7C2D12; font-size: 13px; font-weight: 700; padding: 4px 10px; border-radius: 999px; white-space: nowrap">Our pick</span>
+</div>
+<p style="margin: 0; font-family: Archivo, sans-serif; font-weight: 900; font-size: 44px; line-height: 1">$589 <span style="font-family: Inter, sans-serif; font-size: 16px; font-weight: 500; color: #4A4A4A">installed</span></p>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px">
+<li>3/4 HP</li>
+<li>8-year warranty</li>
+<li>Stainless steel grind components</li>
+<li>1-year leak-free install guarantee</li>
+</ul>
+<button type="button" onClick="{{pick1}}" style="{{btn1Style}}">{{btn1Label}}</button>
+</div>
+
+<div style="{{opt2Style}}">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4A4A">Option 2</span>
+<h3 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 24px">InSinkErator Badger 5XP</h3>
+</div>
+<p style="margin: 0; font-family: Archivo, sans-serif; font-weight: 900; font-size: 44px; line-height: 1">$599 <span style="font-family: Inter, sans-serif; font-size: 16px; font-weight: 500; color: #4A4A4A">installed</span></p>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px">
+<li>3/4 HP</li>
+<li>4-year in-home warranty</li>
+<li>The brand most Phoenix homes already have</li>
+<li>Power cord included</li>
+<li>1-year leak-free install guarantee</li>
+</ul>
+<button type="button" onClick="{{pick2}}" style="{{btn2Style}}">{{btn2Label}}</button>
+</div>
+
+</div>
+</section>
+
+<section style="max-width: 1040px; margin: 0 auto; padding: 40px 20px; display: flex; flex-direction: column; gap: 24px">
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px">How it works</h2>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+<li style="display: flex; flex-direction: column; gap: 8px; padding: 20px; background: #F4F4F2; border-radius: 12px">
+<span style="font-family: Archivo, sans-serif; font-weight: 900; font-size: 28px; color: #9A3412">1</span>
+<strong>Book and pay the $100 deposit.</strong>
+<span style="color: #4A4A4A">Pick your model and slot. Card secures it.</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 8px; padding: 20px; background: #F4F4F2; border-radius: 12px">
+<span style="font-family: Archivo, sans-serif; font-weight: 900; font-size: 28px; color: #9A3412">2</span>
+<strong>Send photos of under your sink.</strong>
+<span style="color: #4A4A4A">It tells us exactly what we're walking into.</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 8px; padding: 20px; background: #F4F4F2; border-radius: 12px">
+<span style="font-family: Archivo, sans-serif; font-weight: 900; font-size: 28px; color: #9A3412">3</span>
+<strong>Your disposal ships to your door.</strong>
+<span style="color: #4A4A4A">Leave it sealed. We install it the week after it arrives, on a day that works for you.</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 8px; padding: 20px; background: #F4F4F2; border-radius: 12px">
+<span style="font-family: Archivo, sans-serif; font-weight: 900; font-size: 28px; color: #9A3412">4</span>
+<strong>Clear the cabinet. We swap it.</strong>
+<span style="color: #4A4A4A">We leave with the old unit and all the packaging. Balance due on completion.</span>
+</li>
+</ol>
+</section>
+
+<section style="max-width: 1040px; margin: 0 auto; padding: 40px 20px; display: flex; flex-direction: column; gap: 20px">
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px">The rules</h2>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-top: 1px solid #D6D6D2">
+<li style="padding: 14px 0; border-bottom: 1px solid #D6D6D2"><strong>Flat rate, everything included.</strong> Install, haul-away, old unit and packaging. No surprises.</li>
+<li style="padding: 14px 0; border-bottom: 1px solid #D6D6D2"><strong>1-year leak-free guarantee.</strong> If our install leaks within a year, we come back and fix it free. The manufacturer's in-home warranty covers the unit itself.</li>
+<li style="padding: 14px 0; border-bottom: 1px solid #D6D6D2"><strong>Plug-in disposals only, for now.</strong> If your current unit is hardwired, we can't take the job yet.</li>
+<li style="padding: 14px 0; border-bottom: 1px solid #D6D6D2"><strong>Empty cabinet required.</strong> Everything out from under the sink before we arrive. It keeps your price this low.</li>
+<li style="padding: 14px 0; border-bottom: 1px solid #D6D6D2"><strong>Under-sink photos required.</strong> It protects you from surprises and us from wasted trips.</li>
+<li style="padding: 14px 0; border-bottom: 1px solid #D6D6D2"><strong>Deposits.</strong> Full refund if you cancel 48+ hours before your slot. Inside 48 hours, or once your disposal has been delivered, the $100 is non-refundable and we collect the unopened unit.</li>
+<li style="padding: 14px 0; border-bottom: 1px solid #D6D6D2"><strong>Scheduling.</strong> We install the week after your disposal arrives. Want it sooner? You're automatically on our move-up list: if a slot opens, we text you first.</li>
+<li style="padding: 14px 0; border-bottom: 1px solid #D6D6D2"><strong>Rescheduling.</strong> Free once with 24 hours notice, and always free if your unit ships late.</li>
+<li style="padding: 14px 0; border-bottom: 1px solid #D6D6D2"><strong>Payment.</strong> The balance is charged to your card on file when the job is done.</li>
+</ul>
+</section>
+
+<section id="photo-guide" style="max-width: 1040px; margin: 0 auto; padding: 40px 20px 56px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px">Your under-sink photos</h2>
+<p style="margin: 0; color: #4A4A4A; max-width: 62ch">Five quick shots tell us exactly what we're walking into. Photos 1 and 2 every time; 3 to 5 are close-ups. Turn on your flash.</p>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; align-items: start">
+
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 20px; background: #FFFFFF; border: 1px solid #D6D6D2; border-radius: 14px">
+<span style="align-self: flex-start; background: #FFEDD5; color: #7C2D12; font-size: 13px; font-weight: 700; padding: 4px 10px; border-radius: 999px">Photo 1</span>
+<h3 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 22px">Stand back, doors closed</h3>
+<p style="margin: 0; color: #4A4A4A">From across the kitchen. Get the whole sink cabinet so we can see how many doors it has.</p>
+<svg viewBox="0 0 400 300" role="img" aria-label="Illustration: the whole sink cabinet seen from across the kitchen, two closed doors under a stainless drop-in sink and faucet, outlined in orange" style="width: 100%; height: auto; display: block; border-radius: 8px">
+<rect x="0" y="0" width="400" height="300" fill="#F4F1EC"></rect>
+<rect x="0" y="286" width="400" height="14" fill="#D6D0C4"></rect>
+<path d="M200 102 V70 Q200 54 216 54 Q230 54 230 68 V76" fill="none" stroke="#9AA1A8" stroke-width="6" stroke-linecap="round"></path>
+<rect x="190" y="96" width="20" height="8" rx="2" fill="#9AA1A8"></rect>
+<rect x="30" y="106" width="340" height="16" fill="#8C857A"></rect>
+<rect x="30" y="106" width="340" height="3" fill="#A69F94"></rect>
+<rect x="128" y="101" width="144" height="7" rx="3" fill="#C9CED3" stroke="#8D949B" stroke-width="1"></rect>
+<rect x="36" y="122" width="328" height="150" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="2"></rect>
+<rect x="44" y="272" width="312" height="14" fill="#B9B2A6"></rect>
+<rect x="44" y="130" width="88" height="34" rx="2" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="1.5"></rect>
+<rect x="44" y="170" width="88" height="96" rx="2" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="1.5"></rect>
+<rect x="268" y="130" width="88" height="34" rx="2" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="1.5"></rect>
+<rect x="268" y="170" width="88" height="96" rx="2" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="1.5"></rect>
+<rect x="78" y="145" width="20" height="4" rx="2" fill="#3A3A3A"></rect>
+<rect x="302" y="145" width="20" height="4" rx="2" fill="#3A3A3A"></rect>
+<circle cx="124" cy="182" r="3" fill="#3A3A3A"></circle>
+<circle cx="276" cy="182" r="3" fill="#3A3A3A"></circle>
+<rect x="140" y="130" width="120" height="22" rx="2" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="1.5"></rect>
+<rect x="140" y="158" width="58" height="108" rx="2" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="1.5"></rect>
+<rect x="202" y="158" width="58" height="108" rx="2" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="1.5"></rect>
+<rect x="148" y="166" width="42" height="92" rx="2" fill="none" stroke="#A5A5A5" stroke-width="1"></rect>
+<rect x="210" y="166" width="42" height="92" rx="2" fill="none" stroke="#A5A5A5" stroke-width="1"></rect>
+<circle cx="191" cy="174" r="3" fill="#3A3A3A"></circle>
+<circle cx="209" cy="174" r="3" fill="#3A3A3A"></circle>
+<rect x="134" y="94" width="132" height="178" rx="6" fill="none" stroke="#C2410C" stroke-width="3" stroke-dasharray="8 6"></rect>
+<line x1="110" y1="66" x2="134" y2="94" stroke="#C2410C" stroke-width="2"></line>
+<rect x="30" y="40" width="160" height="26" rx="13" fill="#C2410C"></rect>
+<text x="110" y="57" text-anchor="middle" font-family="Inter, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Sink cabinet: 2 doors</text>
+</svg>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 20px; background: #FFFFFF; border: 1px solid #D6D6D2; border-radius: 14px">
+<span style="align-self: flex-start; background: #FFEDD5; color: #7C2D12; font-size: 13px; font-weight: 700; padding: 4px 10px; border-radius: 999px">Photo 2</span>
+<h3 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 22px">Doors open, cabinet empty</h3>
+<p style="margin: 0; color: #4A4A4A">Everything out. Step back far enough to get the disposal, pipes, hose and outlet in one shot.</p>
+<svg viewBox="0 0 400 320" role="img" aria-label="Illustration: sink cabinet with both doors open and nothing inside; two stainless bowls above, the disposal hanging under the right bowl, the drain trap, dishwasher hose and power cord to an outlet, numbered 1 to 4" style="width: 100%; height: auto; display: block; border-radius: 8px">
+<rect x="0" y="0" width="400" height="320" fill="#F4F1EC"></rect>
+<rect x="0" y="0" width="400" height="20" fill="#8C857A"></rect>
+<rect x="70" y="28" width="260" height="262" fill="#E3DDD2" stroke="#3A3A3A" stroke-width="2"></rect>
+<polygon points="70,290 330,290 312,262 88,262" fill="#D2CABD"></polygon>
+<polygon points="70,28 26,16 26,318 70,290" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="2"></polygon>
+<polygon points="330,28 374,16 374,318 330,290" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="2"></polygon>
+<circle cx="36" cy="150" r="3" fill="#3A3A3A"></circle>
+<circle cx="364" cy="150" r="3" fill="#3A3A3A"></circle>
+<rect x="96" y="28" width="96" height="46" rx="10" fill="#C9CED3" stroke="#8D949B" stroke-width="1.5"></rect>
+<rect x="208" y="28" width="96" height="46" rx="10" fill="#C9CED3" stroke="#8D949B" stroke-width="1.5"></rect>
+<path d="M230 100 C190 96 110 160 92 252" fill="none" stroke="#6B6B6B" stroke-width="5" stroke-linecap="round"></path>
+<rect x="140" y="74" width="10" height="70" fill="#E8ECEF" stroke="#8D949B" stroke-width="1"></rect>
+<path d="M228 132 H150" fill="none" stroke="#CDD3D8" stroke-width="10"></path>
+<path d="M145 144 V176 Q145 196 165 196 Q185 196 185 180 V172 H204" fill="none" stroke="#CDD3D8" stroke-width="10" stroke-linecap="round"></path>
+<circle cx="210" cy="172" r="8" fill="#9AA1A8"></circle>
+<rect x="240" y="74" width="32" height="10" fill="#9AA1A8"></rect>
+<rect x="228" y="84" width="56" height="88" rx="12" fill="#2F2F2F"></rect>
+<rect x="234" y="104" width="44" height="8" rx="2" fill="#555555"></rect>
+<path d="M256 172 V196 Q256 204 264 204 H300" fill="none" stroke="#141414" stroke-width="3"></path>
+<rect x="300" y="190" width="20" height="30" rx="3" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="1.5"></rect>
+<rect x="140" y="266" width="120" height="22" rx="11" fill="#15803D"></rect>
+<text x="200" y="281" text-anchor="middle" font-family="Inter, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Cabinet empty</text>
+<circle cx="300" cy="100" r="12" fill="#C2410C"></circle><text x="300" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">1</text>
+<circle cx="120" cy="196" r="12" fill="#C2410C"></circle><text x="120" y="201" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">2</text>
+<circle cx="112" cy="140" r="12" fill="#C2410C"></circle><text x="112" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">3</text>
+<circle cx="310" cy="238" r="12" fill="#C2410C"></circle><text x="310" y="243" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">4</text>
+</svg>
+<p style="margin: 0; font-size: 14px; color: #4A4A4A"><strong>1</strong> Disposal · <strong>2</strong> Drain · <strong>3</strong> Dishwasher hose · <strong>4</strong> Power</p>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; align-items: start">
+
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 18px; background: #FFFFFF; border: 1px solid #D6D6D2; border-radius: 14px">
+<span style="align-self: flex-start; background: #FFEDD5; color: #7C2D12; font-size: 13px; font-weight: 700; padding: 4px 10px; border-radius: 999px">Photo 3 · close-up</span>
+<h3 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 19px">Disposal and drain</h3>
+<svg viewBox="0 0 320 220" role="img" aria-label="Close-up illustration: the disposal's mounting ring under the sink and the drain pipe connection, both circled" style="width: 100%; height: auto; display: block; border-radius: 8px">
+<rect x="0" y="0" width="320" height="220" fill="#E3DDD2"></rect>
+<rect x="50" y="0" width="220" height="28" fill="#C9CED3" stroke="#8D949B" stroke-width="1.5"></rect>
+<rect x="110" y="28" width="100" height="16" rx="3" fill="#9AA1A8" stroke="#6F767D" stroke-width="1"></rect>
+<rect x="102" y="32" width="10" height="8" fill="#6F767D"></rect>
+<rect x="208" y="32" width="10" height="8" fill="#6F767D"></rect>
+<path d="M220 120 H262 Q284 120 284 142 V220" fill="none" stroke="#CDD3D8" stroke-width="16"></path>
+<rect x="100" y="44" width="120" height="140" rx="18" fill="#2F2F2F"></rect>
+<rect x="114" y="84" width="92" height="16" rx="3" fill="#4A4A4A"></rect>
+<rect x="228" y="110" width="18" height="20" rx="3" fill="#B9BFC5"></rect>
+<ellipse cx="160" cy="36" rx="80" ry="20" fill="none" stroke="#C2410C" stroke-width="3" stroke-dasharray="7 5"></ellipse>
+<ellipse cx="252" cy="122" rx="38" ry="28" fill="none" stroke="#C2410C" stroke-width="3" stroke-dasharray="7 5"></ellipse>
+</svg>
+<p style="margin: 0; color: #4A4A4A">The mounting ring at the top and where the drain pipe connects.</p>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 18px; background: #FFFFFF; border: 1px solid #D6D6D2; border-radius: 14px">
+<span style="align-self: flex-start; background: #FFEDD5; color: #7C2D12; font-size: 13px; font-weight: 700; padding: 4px 10px; border-radius: 999px">Photo 4 · close-up</span>
+<h3 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 19px">Dishwasher hose</h3>
+<svg viewBox="0 0 320 220" role="img" aria-label="Close-up illustration: the dishwasher hose clamped onto the side of the disposal, circled" style="width: 100%; height: auto; display: block; border-radius: 8px">
+<rect x="0" y="0" width="320" height="220" fill="#E3DDD2"></rect>
+<path d="M118 89 H90 C40 89 40 160 20 220" fill="none" stroke="#6B6B6B" stroke-width="14" stroke-linecap="round"></path>
+<rect x="150" y="0" width="150" height="220" rx="20" fill="#2F2F2F"></rect>
+<rect x="166" y="120" width="118" height="20" rx="3" fill="#4A4A4A"></rect>
+<rect x="118" y="78" width="34" height="22" rx="4" fill="#3A3A3A"></rect>
+<rect x="100" y="79" width="12" height="20" rx="2" fill="#B9BFC5"></rect>
+<ellipse cx="122" cy="89" rx="42" ry="28" fill="none" stroke="#C2410C" stroke-width="3" stroke-dasharray="7 5"></ellipse>
+</svg>
+<p style="margin: 0; color: #4A4A4A">Where the hose clamps onto the side. No dishwasher? Skip this one.</p>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 18px; background: #FFFFFF; border: 1px solid #D6D6D2; border-radius: 14px">
+<span style="align-self: flex-start; background: #FFEDD5; color: #7C2D12; font-size: 13px; font-weight: 700; padding: 4px 10px; border-radius: 999px">Photo 5 · close-up</span>
+<h3 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 19px">Power</h3>
+<svg viewBox="0 0 320 220" role="img" aria-label="Close-up illustration: the power cord leaving the bottom of the disposal and plugged into an outlet, both circled" style="width: 100%; height: auto; display: block; border-radius: 8px">
+<rect x="0" y="0" width="320" height="220" fill="#E3DDD2"></rect>
+<rect x="60" y="-20" width="140" height="130" rx="22" fill="#2F2F2F"></rect>
+<rect x="110" y="104" width="40" height="10" rx="2" fill="#555555"></rect>
+<rect x="124" y="112" width="12" height="14" rx="2" fill="#555555"></rect>
+<path d="M130 126 V150 Q130 170 150 170 H238" fill="none" stroke="#141414" stroke-width="5"></path>
+<rect x="232" y="138" width="44" height="66" rx="6" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="2"></rect>
+<rect x="238" y="160" width="20" height="20" rx="3" fill="#141414"></rect>
+<rect x="246" y="186" width="4" height="8" fill="#3A3A3A"></rect>
+<rect x="260" y="186" width="4" height="8" fill="#3A3A3A"></rect>
+<ellipse cx="130" cy="118" rx="38" ry="24" fill="none" stroke="#C2410C" stroke-width="3" stroke-dasharray="7 5"></ellipse>
+<ellipse cx="254" cy="171" rx="36" ry="44" fill="none" stroke="#C2410C" stroke-width="3" stroke-dasharray="7 5"></ellipse>
+</svg>
+<p style="margin: 0; color: #4A4A4A">The cord and the outlet it plugs into. Wall switch? Mention it on the form.</p>
+</div>
+
+</div>
+
+<p style="margin: 0; padding: 14px 16px; background: #FEF2F2; border-radius: 10px; color: #7F1D1D"><strong>Retake if</strong> it's dark, blurry, too close, or the cabinet isn't empty.</p>
+</section>
+
+<section id="book" style="background: #F4F4F2">
+<div style="max-width: 640px; margin: 0 auto; padding: 56px 20px; display: flex; flex-direction: column; gap: 20px">
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px">Book your swap</h2>
+
+<sc-if value="{{notSubmitted}}" hint-placeholder-val="{{ true }}">
+<form style="display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-name" style="font-weight: 600">Full name</label>
+<input id="f-name" type="text" autocomplete="name" style="padding: 12px 14px; border: 1px solid #8A8A85; border-radius: 8px; background: #FFFFFF; min-height: 48px; box-sizing: border-box">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-phone" style="font-weight: 600">Mobile phone</label>
+<input id="f-phone" type="tel" autocomplete="tel" style="padding: 12px 14px; border: 1px solid #8A8A85; border-radius: 8px; background: #FFFFFF; min-height: 48px; box-sizing: border-box">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-addr" style="font-weight: 600">Service address</label>
+<input id="f-addr" type="text" autocomplete="street-address" style="padding: 12px 14px; border: 1px solid #8A8A85; border-radius: 8px; background: #FFFFFF; min-height: 48px; box-sizing: border-box">
+</div>
+<fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+<legend style="font-weight: 600; padding: 0; margin-bottom: 8px">Which model?</legend>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<button type="button" onClick="{{pick1}}" aria-pressed="{{p1}}" style="{{pill1Style}}">Option 1 · $589</button>
+<button type="button" onClick="{{pick2}}" aria-pressed="{{p2}}" style="{{pill2Style}}">Option 2 · $599</button>
+</div>
+</fieldset>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-photo" style="font-weight: 600">Under-sink photos (required)</label>
+<a href="#photo-guide" style="font-size: 14px">See the 5 photos we need</a>
+<span style="font-size: 14px; color: #4A4A4A">We keep your photos for 2 years for warranty purposes, then delete them.</span>
+<input id="f-photo" type="file" accept="image/*" multiple required style="padding: 12px 14px; border: 1px dashed #8A8A85; border-radius: 8px; background: #FFFFFF; min-height: 48px; box-sizing: border-box">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-notes" style="font-weight: 600">Anything we should know? <span style="font-weight: 400; color: #4A4A4A">(optional)</span></label>
+<textarea id="f-notes" rows="3" placeholder="Dishwasher connected? Double bowl? Switch on wall or unit?" style="padding: 12px 14px; border: 1px solid #8A8A85; border-radius: 8px; background: #FFFFFF; box-sizing: border-box; resize: vertical"></textarea>
+</div>
+<fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+<legend style="font-weight: 600; padding: 0; margin-bottom: 4px">Days that work for you</legend>
+<span style="font-size: 14px; color: #4A4A4A">Pick all that apply. Once your disposal arrives, we text you install times for the following week.</span>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<sc-for list="{{days}}" as="d" hint-placeholder-count="4">
+<button type="button" onClick="{{d.pick}}" aria-pressed="{{d.on}}" style="{{d.style}}">{{d.label}}</button>
+</sc-for>
+</div>
+</fieldset>
+<fieldset style="border: 1px solid #8A8A85; border-radius: 10px; margin: 0; padding: 16px; display: flex; flex-direction: column; gap: 12px; background: #FFFFFF">
+<legend style="font-weight: 600; padding: 0 6px">Agreement</legend>
+<div style="display: flex; gap: 10px; align-items: flex-start">
+<input id="f-terms" type="checkbox" required style="width: 22px; height: 22px; margin: 2px 0 0; flex-shrink: 0">
+<label for="f-terms">I agree to the {{price}} price and the rules above. The balance of {{balance}} is due when the job is done.</label>
+</div>
+<div style="display: flex; gap: 10px; align-items: flex-start">
+<input id="f-card" type="checkbox" required style="width: 22px; height: 22px; margin: 2px 0 0; flex-shrink: 0">
+<label for="f-card">I authorize Just the Disposal Guy to charge the card I use today for the balance when the job is complete.</label>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-sign" style="font-weight: 600">Type your full name to sign</label>
+<input id="f-sign" type="text" autocomplete="name" required style="padding: 12px 14px; border: 1px solid #8A8A85; border-radius: 8px; background: #FFFFFF; min-height: 48px; box-sizing: border-box">
+</div>
+</fieldset>
+<button type="button" onClick="{{submit}}" style="background: {{accent}}; color: #FFFFFF; border: 0; border-radius: 8px; font-weight: 700; font-size: 18px; padding: 16px 20px; min-height: 56px; cursor: pointer">Pay $100 deposit &amp; book</button>
+<span style="font-size: 14px; color: #4A4A4A; text-align: center">Secure checkout by Stripe or Square. Balance of {{balance}} due when the job is done.</span>
+</form>
+</sc-if>
+
+<sc-if value="{{submitted}}" hint-placeholder-val="{{ false }}">
+<div role="status" style="background: #FFFFFF; border: 2px solid #15803D; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+<strong style="font-family: Archivo, sans-serif; font-size: 26px; color: #15803D">Booked!</strong>
+<p style="margin: 0">Your {{modelName}} ships to your address in a few days. Once it arrives, we'll text you install times for the following week. Leave it sealed, and clear the cabinet before we come.</p>
+<button type="button" onClick="{{reset}}" style="align-self: flex-start; background: transparent; border: 1px solid #8A8A85; border-radius: 8px; padding: 10px 16px; min-height: 44px; font-weight: 600; cursor: pointer">Back to form</button>
+</div>
+</sc-if>
+</div>
+</section>
+
+<section style="max-width: 760px; margin: 0 auto; padding: 56px 20px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0 0 8px; font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px">FAQ</h2>
+<details style="border-bottom: 1px solid #D6D6D2; padding: 14px 0">
+<summary style="font-weight: 700; min-height: 28px">How fast can you get here?</summary>
+<p style="margin: 10px 0 0; color: #333333">Your disposal arrives within a few days, and we install it the following week. Want it sooner? If a slot opens up, we text you first.</p>
+</details>
+<details style="border-bottom: 1px solid #D6D6D2; padding: 14px 0">
+<summary style="font-weight: 700; min-height: 28px">Do I need to buy the disposal myself?</summary>
+<p style="margin: 10px 0 0; color: #333333">No. It ships to your house before install day. Once it's delivered, the deposit is non-refundable.</p>
+</details>
+<details style="border-bottom: 1px solid #D6D6D2; padding: 14px 0">
+<summary style="font-weight: 700; min-height: 28px">How long does the install take?</summary>
+<p style="margin: 10px 0 0; color: #333333">About an hour, sometimes less with a clear cabinet.</p>
+</details>
+<details style="border-bottom: 1px solid #D6D6D2; padding: 14px 0">
+<summary style="font-weight: 700; min-height: 28px">My old one is hardwired. Can you still do it?</summary>
+<p style="margin: 10px 0 0; color: #333333">Not yet. Right now we only swap plug-in disposals. Not sure which you have? Photo 5 will tell us.</p>
+</details>
+<details style="border-bottom: 1px solid #D6D6D2; padding: 14px 0">
+<summary style="font-weight: 700; min-height: 28px">What areas do you serve?</summary>
+<p style="margin: 10px 0 0; color: #333333">Phoenix metro. We group installs by neighborhood to keep the price flat.</p>
+</details>
+</section>
+
+<footer style="background: #141414; color: #E5E5E5">
+<div style="max-width: 1040px; margin: 0 auto; padding: 28px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 15px">
+<span>Just the Disposal Guy · Licensed contractor · ROC #[ROC LICENSE #]</span>
+<span>[PHONE] · Phoenix metro</span>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C2410C","options":["#C2410C","#1D4ED8","#15803D","#141414"]},"$preview":{"width":1280,"height":5100}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { picked: 1, days: [], submitted: false };
+  }
+  renderVals() {
+    const accent = this.props.accent ?? '#C2410C';
+    const picked = this.state.picked;
+    const card = (on) => 'display: flex; flex-direction: column; gap: 16px; padding: 24px; border-radius: 14px; background: #FFFFFF; border: ' + (on ? '3px solid ' + accent : '1px solid #D6D6D2') + '; box-shadow: ' + (on ? '0 6px 20px rgba(0,0,0,0.08)' : 'none');
+    const btn = (on) => 'margin-top: auto; border-radius: 8px; font-weight: 700; font-size: 16px; padding: 12px 18px; min-height: 48px; cursor: pointer; ' + (on ? 'background: ' + accent + '; color: #FFFFFF; border: 0' : 'background: #FFFFFF; color: #141414; border: 2px solid #141414');
+    const pill = (on) => 'border-radius: 999px; font-weight: 600; font-size: 15px; padding: 10px 18px; min-height: 44px; cursor: pointer; ' + (on ? 'background: #141414; color: #FFFFFF; border: 2px solid #141414' : 'background: #FFFFFF; color: #141414; border: 2px solid #8A8A85');
+    const dayLabels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
+    const days = dayLabels.map((label, i) => ({
+      label,
+      on: this.state.days.includes(i) ? 'true' : 'false',
+      style: pill(this.state.days.includes(i)),
+      pick: () => this.setState({ days: this.state.days.includes(i) ? this.state.days.filter((d) => d !== i) : this.state.days.concat([i]) })
+    }));
+    return {
+      accent,
+      opt1Style: card(picked === 1),
+      opt2Style: card(picked === 2),
+      btn1Style: btn(picked === 1),
+      btn2Style: btn(picked === 2),
+      btn1Label: picked === 1 ? 'Selected' : 'Choose this one',
+      btn2Label: picked === 2 ? 'Selected' : 'Choose this one',
+      pill1Style: pill(picked === 1),
+      pill2Style: pill(picked === 2),
+      p1: picked === 1 ? 'true' : 'false',
+      p2: picked === 2 ? 'true' : 'false',
+      pick1: () => this.setState({ picked: 1 }),
+      pick2: () => this.setState({ picked: 2 }),
+      days,
+      balance: picked === 1 ? '$489' : '$499',
+      price: picked === 1 ? '$589' : '$599',
+      modelName: picked === 1 ? 'Waste King L-3200' : 'InSinkErator Badger 5XP',
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      submit: () => this.setState({ submitted: true }),
+      reset: () => this.setState({ submitted: false })
+    };
+  }
+}
+</script>
+</body>
+</html>
