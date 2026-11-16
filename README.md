@@ -1,8 +1,8 @@
-# Just the Disposal Guy
+# Just Call the Disposal Guy
 
 Phoenix-metro garbage disposal swap-out service. Two models, flat installed price, plug-in units only, booked online with a deposit.
 
-**Business name to confirm:** the plan documents say "Just the Disposal Guy"; this repo is named `just-call-the-disposal-guy`. Settle one name before the website goes public.
+**Business name (decided 2026-11-16):** Just Call the Disposal Guy. Older plan documents still say "Just the Disposal Guy" and should be updated.
 
 ## In this repo
 
@@ -25,5 +25,5 @@ To keep a frozen copy here, open a doc, use Export → PDF, then upload it to `d
 ## Open before launch
 
 - ROC license number (page shows a placeholder)
-- Final business name
+- Update the business name in the plan documents and on the business filing
 - Booking and deposit payment provider
