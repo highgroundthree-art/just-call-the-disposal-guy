@@ -27,7 +27,7 @@ To keep a frozen copy here, open a doc, use Export → PDF, then upload it to `d
 
 ## Open before launch
 
-- ROC license number (page shows a placeholder)
+- Operating under the Arizona handyman exemption (A.R.S. § 32-1121(A)(14)): every job under $1,000 total, no permit work, and every ad (site, Google, social, cards, vehicle) must say "Not a licensed contractor"
 - Update the business name in the plan documents and on the business filing
 - Booking and deposit payment provider
 
@@ -35,6 +35,6 @@ To keep a frozen copy here, open a doc, use Export → PDF, then upload it to `d
 
 1. **Netlify (free hosting + form inbox).** Sign up at netlify.com with GitHub → Add new site → Import from GitHub → pick `just-call-the-disposal-guy` → Deploy. Netlify reads `netlify.toml` and publishes `site/`.
 2. **Turn on form email alerts.** In Netlify: Site configuration → Forms → enable form detection, then Form notifications → Email → your address. Every booking, with its photos, lands there.
-3. **Deposit links.** In Square or Stripe, create a $100 payment link for each option. Paste them into the four-line `CONFIG` block at the bottom of `site/index.html`, along with your phone and ROC number. Until the links are added, customers land on a thank-you page that says you'll text the deposit link.
+3. **Deposit links.** In Square or Stripe, create a $100 payment link for each option. Paste them into the three-line `CONFIG` block at the bottom of `site/index.html`, along with your business phone number. Until the links are added, customers land on a thank-you page that says you'll text the deposit link.
 4. **Domain.** Buy the domain, then in Netlify: Domain management → Add a domain. Netlify adds free HTTPS.
 5. **Test it.** Submit one fake booking with photos, check the email, then delete it in Netlify → Forms.

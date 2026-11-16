@@ -84,7 +84,7 @@ footer a{color:#FDBA74}
 <div class="wrap">
 <div>
 <div class="brand">Just Call the Disposal Guy</div>
-<div class="small">Licensed contractor · ROC #<span data-roc>[ROC LICENSE #]</span></div>
+<div class="small">Not a licensed contractor · Phoenix metro</div>
 </div>
 <a class="btn" href="#book">Book now</a>
 </div>
@@ -152,6 +152,7 @@ footer a{color:#FDBA74}
 <li><strong>Flat rate, everything included.</strong> Install, haul-away, old unit and packaging. No surprises.</li>
 <li><strong>1-year leak-free guarantee.</strong> If our install leaks within a year, we come back and fix it free. The manufacturer's in-home warranty covers the unit itself.</li>
 <li><strong>Plug-in disposals only, for now.</strong> If your current unit is hardwired, we can't take the job yet.</li>
+<li><strong>Swap only.</strong> We replace an existing plug-in disposal with a new one. No new outlets, no drain rerouting, no work that needs a permit.</li>
 <li><strong>Empty cabinet required.</strong> Everything out from under the sink before we arrive. It keeps your price this low.</li>
 <li><strong>Under-sink photos required.</strong> They protect you from surprises and us from wasted trips.</li>
 <li><strong>Deposits.</strong> Full refund if you cancel 48+ hours before your slot. Inside 48 hours, or once your disposal has been delivered, the $100 is non-refundable and we collect the unopened unit.</li>
@@ -382,23 +383,21 @@ footer a{color:#FDBA74}
 
 <footer>
 <div class="wrap">
-<span>Just Call the Disposal Guy · Licensed contractor · ROC #<span data-roc>[ROC LICENSE #]</span></span>
+<span>Just Call the Disposal Guy · Not a licensed contractor</span>
 <span><a data-phone-link href="#"><span data-phone>[PHONE]</span></a> · Phoenix metro</span>
 </div>
 </footer>
 
 <script>
-/* ===== EDIT THESE FOUR LINES ===== */
+/* ===== EDIT THESE THREE LINES ===== */
 var CONFIG = {
   phone: "[PHONE]",
-  roc: "[ROC LICENSE #]",
   depositLinkOption1: "",  /* Square or Stripe payment link for the $100 deposit, Option 1 */
   depositLinkOption2: ""   /* Square or Stripe payment link for the $100 deposit, Option 2 */
 };
 /* ================================= */
 
 document.querySelectorAll('[data-phone]').forEach(function (el) { el.textContent = CONFIG.phone; });
-document.querySelectorAll('[data-roc]').forEach(function (el) { el.textContent = CONFIG.roc; });
 document.querySelectorAll('[data-phone-link]').forEach(function (el) { el.href = 'tel:' + CONFIG.phone.replace(/[^0-9+]/g, ''); });
 
 var form = document.getElementById('booking');
