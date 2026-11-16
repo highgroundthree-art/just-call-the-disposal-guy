@@ -8,6 +8,7 @@ Phoenix-metro garbage disposal swap-out service. Two models, flat installed pric
 
 | Path | What it is |
 |---|---|
+| `docs/business-plan.md` | Business plan and SBA loan request (draft, Nov 15, 2026): pricing, $200/$100 split, 3-year projections, sensitivity, $16,000 loan. |
 | `website/design-source/landing-page.dc.html` | Landing page design (hero, two-model pricing, how it works, rules, under-sink photo guide, booking). Design-canvas source with template fields; it becomes the public site in the next step. |
 
 ## Working documents (private, kept as living docs in Claude)
